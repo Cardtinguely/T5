@@ -1,0 +1,25 @@
+<!--<div>
+
+  <p>{{chatMessage}}</p> <!--  2-way-binding 
+  <textarea [(ngModel)]="chatMessage" (keyup.enter)="addMessage(chatMessage)" class="form-control" rows="1" placeholder="type here..."></textarea>
+  <button [disabled]="!chatMessage" class="btn btn-primary" (click)="addMessage(chatMessage)">Submit</button>
+  
+</div>
+for ts public addMessage(message: string): void {
+    alert(message);
+    console.log(message);
+    this.chatMessage = '';
+  }
+
+
+<textarea (keyup.enter)="chatMessage(chatMessage)" class="from-control" rows="1" placeholder="Dein Nickname"></textarea>-->
+
+
+
+
+<div class="chat-bar">
+  <input [(ngModel)]="chatMessage" type="text" class="form-control" placeholder="Enter..." (keyup.enter)="addMessage(chatMessage)" />
+  <button class="btn btn-primary btn-nickname" (keyup.enter)="addMessage(chatMessage)" (click)="addMessage(chatMessage)">Chat</button>
+  </div>
+ 
+
